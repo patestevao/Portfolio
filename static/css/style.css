@@ -1,0 +1,21 @@
+body {
+  color: #333;
+  font-family: Sans-serif, "Verdana";
+  background-color: #fff;
+  text-size: 1em;
+  text-align: center; }
+
+#title {
+  margin-top: 2em; }
+
+#divider {
+  height: 1em;
+  width: auto;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2em; }
+
+img {
+  height: 15em;
+  width: autos; }
+
+/*# sourceMappingURL=style.css.map */
