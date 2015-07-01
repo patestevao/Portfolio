@@ -12,10 +12,81 @@ body {
   height: 1em;
   width: auto;
   border-bottom: 1px solid #333;
-  margin-bottom: 2em; }
+  margin-bottom: 5em; }
 
-img {
-  height: 15em;
-  width: autos; }
+.box {
+  background: no-repeat center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em; }
+  .box .display-imgs {
+    text-decoration: none;
+    color: #fff; }
+    .box .display-imgs .overlay {
+      background-color: #f36;
+      text-align: center;
+      font-size: 6em;
+      width: auto;
+      opacity: 0;
+      transition-property: opacity, background-color;
+      transition-duration: 0.3s; }
+
+@media (max-width: 640px) {
+  .box {
+    height: 17em;
+    width: 17em;
+    background-size: 17em; }
+    .box .overlay {
+      height: 3em;
+      padding-top: 0.7em; } }
+@media (min-width: 641px) and (max-width: 850px) {
+  .box {
+    height: 12em;
+    width: 12em;
+    background-size: 12em; }
+    .box .overlay {
+      height: 2em;
+      padding-top: 0.27em; } }
+@media (min-width: 851px) {
+  .box {
+    height: 15em;
+    width: 15em;
+    background-size: 15em; }
+    .box .overlay {
+      height: 2.5em;
+      padding-top: 0.5em; } }
+#box-dispersion {
+  background-image: url("../img/dispersion/dispersion1.png"); }
+
+#box-doubleex {
+  background-image: url("../img/double-exposure/doubleex1.png"); }
+
+#box-drawing {
+  background-image: url("../img/drawing/oil-portrait.png"); }
+
+#box-halftone {
+  background-image: url("../img/halftone/halftone-pat-simple.png"); }
+
+#box-lego {
+  background-image: url("../img/lego/lego-pat-web.png"); }
+
+#box-mosaic {
+  background-image: url("../img/mosaic/flower-mosaic.png"); }
+
+#box-stereoscope {
+  background-image: url("../img/stereoscope/stereoscopic-pat1.png"); }
+
+#box-textport {
+  background-image: url("../img/text-portrait/textportrait1.png"); }
+
+#box-warhol {
+  background-image: url("../img/warhol/warhol-flower-poster.png"); }
+
+.display-imgs:hover .overlay {
+  opacity: 1; }
+
+.display-imgs:active .overlay {
+  background-color: #fff;
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
